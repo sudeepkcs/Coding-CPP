@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+void fun(int);
+
+int main()
+{
+    int x;
+    cout<<"How many numbers?";
+    cin>>x;
+    fun(x);
+}
+void fun(int x)
+{
+    int y,temp =0;
+        for(int i=1;i<=x;i++)
+    {
+        cout<<"Enter "<<i<<" Number :";
+        cin>>y;
+        if(temp<y)
+        {
+            temp=y;
+        }
+    }
+    cout<<"Highest number is: "<< temp;
+}
