@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void area(int &, int &);
+void area(int &, int &, int &);
+
+int main() {
+    
+    int base, height, len,breadth,a;
+    base = 10;
+    height = 20;
+    len = 30;
+    breadth =40;
+    
+    area(base,height);
+    area(len,breadth,a);
+	return 0;
+}
+
+void area(int &l, int &m){
+    cout<<endl<<"triangle area ="<<l*m/2;
+}
+
+void area(int &l, int &m, int &n){
+    cout<<endl<<"recatangle area ="<<l*m;
+}

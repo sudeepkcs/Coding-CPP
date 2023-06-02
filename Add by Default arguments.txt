@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+void addDefault(int, int, int = 0);
+
+int main() {
+    
+    int x, y, z;
+    x = 10;
+    y = 20;
+    z = 30;
+    addDefault(x,y);
+    cout<<endl;
+    addDefault(x,y,z);
+	return 0;
+}
+
+void addDefault(int l, int m,int n){
+    cout<<l+m+n;
+}

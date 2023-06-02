@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+void maxNum(int , int );
+void maxNum(float, float);
+
+
+int main() {
+    
+    int x, y;
+    x = 170;
+    y = 90;
+    maxNum(x,y);
+    float m,n;
+    
+    m=10.7;
+    n=8.4;
+    maxNum(m,n);
+	return 0;
+}
+
+void maxNum(int l, int m){
+    int temp ;
+    if(l>m)
+      temp = l;
+    else 
+      temp = m;
+    cout<<" Intmax = "<<temp;
+}
+
+void maxNum(float l, float m){
+    float temp ;
+    if(l>m)
+      temp = l;
+    else 
+      temp = m;
+    cout<<"Float max = "<<temp;
+}
